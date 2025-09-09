@@ -1,0 +1,37 @@
+/* Sidebar styling */
+[data-testid="stSidebar"] {
+    /* New gradient background */
+    background-image: linear-gradient(to bottom, #2c3e50, #1a2533);
+    color: #FFFFFF; /* Set default text color to white */
+    border-right: 2px solid #4A4A4A; 
+}
+
+/* Update the header text color inside the sidebar */
+[data-testid="stSidebar"] h1, 
+[data-testid="stSidebar"] h2, 
+[data-testid="stSidebar"] h3 {
+    color: #FFFFFF; 
+}
+
+/* --- NEW --- Make feature labels more visible */
+[data-testid="stWidgetLabel"] label {
+    color: #aeb8c4; /* A lighter grey for better contrast */
+    font-weight: 600; /* Make the font slightly bolder */
+    font-size: 1.05em;
+}
+
+/* Customizing the primary button */
+.stButton>button {
+    border: 2px solid #3498db;
+    border-radius: 20px;
+    color: #ffffff;
+    background-color: #3498db;
+    transition: all 0.2s ease-in-out;
+}
+
+.stButton>button:hover {
+    border-color: #2980b9;
+    background-color: #2980b9;
+    color: #ffffff;
+    transform: scale(1.02);
+}
